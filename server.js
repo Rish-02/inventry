@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["https://inventory-rish-api.netlify.app"],
+    origin: ["https://rish-inventoryapp.netlify.app"],
     credentials: true,
   })
 );

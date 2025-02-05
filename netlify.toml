@@ -5,9 +5,9 @@
   force = true
   from = "/api/*"
   status = 200
-  to = "/.netlify/functions/api/:splat"
+  to = "https://inventory-rish-api.netlify.app:splat"
 [[headers]]
-  for = "/api/*" # you can configure the correct paths here
+  for = "/*" # you can configure the correct paths here
   [headers.values]
     access-control-allow-origin = "*"
     content-type = "application/x-www-form-urlencoded"
