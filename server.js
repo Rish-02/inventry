@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 app.use(errorHandler);
 // Connect to DB and start server
 const PORT = process.env.PORT || 5000;
-mongoose
+const runSever = () => mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
     app.listen(PORT, () => {
@@ -49,4 +49,4 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-  module.exports = app
+  module.exports = {app, runServer}

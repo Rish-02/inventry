@@ -1,4 +1,3 @@
-import express, { Router } from "express";
 import serverlessHttp from "serverless-http";
 import { app } from "../app"
 
