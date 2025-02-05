@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 app.use(errorHandler);
 // Connect to DB and start server
 const PORT = process.env.PORT || 5000;
-const runSever = () => mongoose
+const runServer = () => mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
     app.listen(PORT, () => {
