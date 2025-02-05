@@ -3,9 +3,9 @@
   node_bundler = "esbuild"
 [[redirects]]
   force = true
-  from = "/api/*"
+  from = "/*"
   status = 200
-  to = "https://inventory-rish-api.netlify.app/.netlify/functions/api"
+  to = "/.netlify/functions/api/:splat"
 [[headers]]
   for = "/*" # you can configure the correct paths here
   [headers.values]
