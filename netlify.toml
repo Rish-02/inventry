@@ -10,4 +10,4 @@
   for = "/*" # you can configure the correct paths here
   [headers.values]
     access-control-allow-origin = "*"
-    content-type = any
+    content-type = "application/x-www-form-urlencoded"
