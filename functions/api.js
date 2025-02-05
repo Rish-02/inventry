@@ -1,4 +1,9 @@
-import serverless from "serverless-http";
-import { app } from "../app"
+import ServerlessHttp from "serverless-http";
+import { app } from "../server";
 
-export const handler = serverless(app)
+const handler = ServerlessHttp(app)
+
+module.exports.handler = async(event, context)=>{
+  const result = await handler(event, context);
+  return result;
+}
